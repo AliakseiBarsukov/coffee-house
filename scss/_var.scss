@@ -1,0 +1,28 @@
+$main-color: #403F3D;
+$light: #E1D4C9;
+$text-light: #B0907A;
+$border: #665F55;
+
+@mixin laptop {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin hover {
+  @media (min-width: 960px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 560px) {
+    @content;
+  }
+}

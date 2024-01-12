@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="./../../scss/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="header__home" href="./../../index.html">
+          <img class="header__logo" src="./../../assets/img/logo.svg" alt="logo">
+        </a>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="./../../index.html#favorite">Favorite coffee</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./../../index.html#about">About</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./../../index.html#mobile">Mobile app</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contact">Contact us</a>
+            </li>
+          </ul>
+          <a class="header__link header__link-home header__link-home_active">Menu</a>
+        </nav>
+          <button class="header__btn">
+            <span></span>
+          </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="menu mb-100">
+      <div class="container">
+        <h2 class="menu__title title">Behind each of our cups hides an <span class="italic">amazing surprise</span></h2>
+        <div class="menu__btns">
+          <button class="menu__btn menu__btn-active menu__btn-coffee">
+            <span>
+              <img class="menu__btn-img" src="./../../assets/img/coffee.png" alt="coffee cup">
+            </span>
+            Coffee</button>
+          <button class="menu__btn menu__btn-tee">
+            <span>
+              <img class="menu__btn-img" src="./../../assets/img/tee.png" alt="coffee cup">
+            </span>
+            Tea</button>
+          <button class="menu__btn menu__btn-dessert">
+            <span>
+              <img class="menu__btn-img" src="./../../assets/img/dessert.png" alt="coffee cup">
+            </span>
+            Dessert</button>
+        </div>
+
+        <ul class="menu__list" id="menu-list">
+          <li class="menu__item card">
+            <div class="card__image">
+              <img class="card__img" src="./../../assets/img/coffee-1.jpg" alt="">
+            </div>
+            <div class="card__wrapper">
+              <h3 class="card__title">Irish coffee</h3>
+              <p class="card__text">Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
+              <span class="card__price">$7.00</span>
+            </div>
+          </li>
+          <li class="menu__item card">
+            <div class="card__image">
+              <img class="card__img" src="./../../assets/img/coffee-2.jpg" alt="">
+            </div>
+            <div class="card__wrapper">
+              <h3 class="card__title">Kahlua coffee</h3>
+              <p class="card__text">Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</p>
+              <span class="card__price">$7.00</span>
+            </div>
+          </li>
+          <li class="menu__item card">
+            <div class="card__image">
+              <img class="card__img" src="./../../assets/img/coffee-3.jpg" alt="">
+            </div>
+            <div class="card__wrapper">
+              <h3 class="card__title">Honey raf</h3>
+              <p class="card__text">Espresso with frothed milk, cream and aromatic honey</p>
+              <span class="card__price">$5.50</span>
+            </div>
+          </li>
+          <li class="menu__item card">
+            <div class="card__image">
+              <img class="card__img" src="./../../assets/img/coffee-4.jpg" alt="">
+            </div>
+            <div class="card__wrapper">
+              <h3 class="card__title">Ice cappuccino</h3>
+              <p class="card__text">Cappuccino with soft thick foam in summer version with ice</p>
+              <span class="card__price">$5.00</span>
+            </div>
+          </li>
+          <li class="menu__item card card__hidden">
+            <div class="card__image">
+              <img class="card__img" src="./../../assets/img/coffee-5.jpg" alt="">
+            </div>
+            <div class="card__wrapper">
+              <h3 class="card__title">Espresso</h3>
+              <p class="card__text">Classic black coffee</p>
+              <span class="card__price">$4.50</span>
+            </div>
+          </li>
+          <li class="menu__item card card__hidden">
+            <div class="card__image">
+              <img class="card__img" src="./../../assets/img/coffee-6.jpg" alt="">
+            </div>
+            <div class="card__wrapper">
+              <h3 class="card__title">Latte</h3>
+              <p class="card__text">Espresso coffee with the addition of steamed milk and dense milk foam</p>
+              <span class="card__price">$5.50</span>
+            </div>
+          </li>
+          <li class="menu__item card card__hidden">
+            <div class="card__image">
+              <img class="card__img" src="./../../assets/img/coffee-7.jpg" alt="">
+            </div>
+            <div class="card__wrapper">
+              <h3 class="card__title">Latte macchiato</h3>
+              <p class="card__text">Espresso with frothed milk and chocolate</p>
+              <span class="card__price">$5.50</span>
+            </div>
+          </li>
+          <li class="menu__item card card__hidden">
+            <div class="card__image">
+              <img class="card__img" src="./../../assets/img/coffee-8.jpg" alt="">
+            </div>
+            <div class="card__wrapper">
+              <h3 class="card__title">Coffee with cognac</h3>
+              <p class="card__text">Fragrant black coffee with cognac and whipped cream</p>
+              <span class="card__price">$6.50</span>
+            </div>
+          </li>
+        </ul>
+        <button class="card__update"></button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="container footer__container">
+      <div class="footer__wrapper">
+        <div class="footer__block">
+          <h2 class="footer__title title">Sip, Savor, Smile. <span class="italic">It’s coffee time!</span></h2>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23 3.01006C23 3.01006 20.9821 4.20217 19.86 4.54006C19.2577 3.84757 18.4573 3.35675 17.567 3.13398C16.6767 2.91122 15.7395 2.96725 14.8821 3.29451C14.0247 3.62177 13.2884 4.20446 12.773 4.96377C12.2575 5.72309 11.9877 6.62239 12 7.54006V8.54006C10.2426 8.58562 8.50127 8.19587 6.93101 7.4055C5.36074 6.61513 4.01032 5.44869 3 4.01006C3 4.01006 -1 13.0101 8 17.0101C5.94053 18.408 3.48716 19.109 1 19.0101C10 24.0101 21 19.0101 21 7.51006C20.9991 7.23151 20.9723 6.95365 20.92 6.68006C21.9406 5.67355 23 3.01006 23 3.01006Z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M30 34C32.2091 34 34 32.2091 34 30C34 27.7909 32.2091 26 30 26C27.7909 26 26 27.7909 26 30C26 32.2091 27.7909 34 30 34Z"/>
+                  <path d="M21 34V26C21 23.2386 23.2386 21 26 21H34C36.7614 21 39 23.2386 39 26V34C39 36.7614 36.7614 39 34 39H26C23.2386 39 21 36.7614 21 34Z"/>
+                  <path d="M35.5 24.51L35.51 24.4989"/>
+                </svg>
+                </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M35 20H32C30.6739 20 29.4021 20.5268 28.4645 21.4645C27.5268 22.4021 27 23.6739 27 25V28H24V32H27V40H31V32H34L35 28H31V25C31 24.7348 31.1054 24.4804 31.2929 24.2929C31.4804 24.1054 31.7348 24 32 24H35V20Z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__block">
+          <h3 class="footer__info">Contact us</h3>
+          <ul class="footer__info-list">
+            <li class="footer__info-item footer__info-item_link">
+              <a class="footer__link footer__link-maps" href="https://maps.app.goo.gl/Tt2w1YxWDDDrFVXf8" target="_blank">8558 Green Rd.,  LA</a>
+            </li>
+            <li class="footer__info-item footer__info-item_link">
+              <a class="footer__link footer__link-phone" href="tel:+16035550123">+1 (603) 555-0123</a>
+            </li>
+            <li class="footer__info-item footer__link-time">Mon-Sat: 9:00 AM – 23:00 PM</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+  </footer>
+  <div class="modal">
+    <div class="modal__wrapper">
+      <div class="modal__image">
+        <img class="modal__img" src="./../../assets/img/coffee-1.jpg" alt="modal image">
+      </div>
+      <div class="modal__info">
+        <h3 class="modal__title">Irish coffee</h3>
+        <p class="modal__text">Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
+        <div class="modal__wrap">
+          <span>Size</span>
+          <div class="modal__btns">
+            <button class="modal__btn modal__btn-size modal__btn-active">
+              <span>S</span>
+              <span>200 ml</span>
+            </button>
+            <button class="modal__btn modal__btn-size">
+              <span>M</span>
+              <span>300 ml</span>
+            </button>
+            <button class="modal__btn modal__btn-size">
+              <span>L</span>
+              <span>400 ml</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="modal__wrap">
+          <span>Additives</span>
+          <div class="modal__btns">
+            <button class="modal__btn modal__btn-adds">
+              <span>1</span>
+              <span>Sugar</span>
+            </button>
+            <button class="modal__btn modal__btn-adds">
+              <span>2</span>
+              <span>Cinnamon</span>
+            </button>
+            <button class="modal__btn modal__btn-adds">
+              <span>3</span>
+              <span>Syrup</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="modal__price">
+          <span>Total:</span>
+          <span>$7.00</span>
+        </div>
+
+        <p class="modal__alert">The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+
+        <button class="modal__close">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./../../script/script.js" type="module"></script>
+</body>
+</html>

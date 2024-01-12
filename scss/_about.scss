@@ -1,0 +1,64 @@
+.about {
+
+  &__text {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 125%;
+    margin-bottom: 40px;
+
+    @include mobile {
+      font-size: 32px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 40px;
+
+    @include tablet {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  &__img {
+    transform: scale(1.02);
+    transition: all .3s ease-in-out;
+
+
+    @include tablet {
+      width: 100%;
+      max-height: 588px;
+      transform: scale(1);
+    }
+
+    @include mobile {
+      height: 590px;
+      object-fit: cover;
+    }
+  }
+
+  &__wrapp-img {
+    border-radius: 20px;
+    overflow: hidden;
+
+    &:hover .about__img{
+      transform: scale(1);
+    }
+
+    &_none {
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+}

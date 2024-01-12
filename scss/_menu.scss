@@ -1,0 +1,75 @@
+.menu {
+
+  &__title {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+
+  &__btns {
+      display: flex;
+      margin: 0 auto;
+      max-width: max-content;
+      gap: 16px;
+      margin-bottom: 40px;
+
+      @include mobile {
+        gap: 8px;
+      }
+  }
+
+  &__btn {
+    display: flex;
+    padding: 8px 16px 8px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    border: 1px solid $border;
+
+    font-weight: 600;
+    line-height: 150%;
+    color: $main-color;
+    transition: all 0.3s ease-in-out;
+
+    & span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #C1B6AD;
+      border-radius: 100%;
+      transition: all 0.3s ease-in-out;
+    }
+
+    @include hover {
+      &:hover {
+        background-color: #665F55;
+        color: $light;
+      }
+  
+      &:hover span {
+        background-color: $light;
+      }
+    }
+
+    &-active {
+      background-color: #665F55;
+      color: $light;
+    }
+
+    &-active span {
+      background-color: $light;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+}

@@ -1,0 +1,71 @@
+.download {
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    @include tablet {
+      flex-wrap: wrap;
+      gap: 96px;
+    }
+
+    @include mobile {
+      gap: 36px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 630px;
+    gap: 40px;
+
+    @include tablet {
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    line-height: 130%;
+  }
+
+  &__text {
+    line-height: 150%;
+  }
+
+  &__links {
+    display: flex;
+    gap: 20px;
+
+    @include mobile {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    border-radius: 100px;
+    border: 1px solid #665F55;
+    transition: all .2s ease-in-out;
+
+    @include hover {
+      &:hover {
+        background-color: #665F55;
+      }
+  
+      &:hover svg{
+        fill: $light;
+      }
+    }
+  }
+
+  &__image {
+    margin: 0 auto;
+  }
+
+}

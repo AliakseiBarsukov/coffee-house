@@ -1,0 +1,112 @@
+.footer {
+  margin-bottom: 40px;
+  color: $light;
+
+
+  &__wrapper {
+    display: flex;
+    gap: 100px;
+    padding: 100px;
+    background-color: #665F55;
+    border-radius: 40px;
+
+    @include tablet {
+      flex-wrap: wrap;
+      padding: 100px 60px;
+      gap: 69px;
+    }
+
+    @include mobile {
+      padding: 60px 16px;
+      gap: 10px;
+    }
+  }
+
+  &__block {
+    max-width: 530px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 1px solid #E1D4C9;
+    transition: .3s ease-in-out;
+
+    @include hover {
+      &:hover {
+        background-color: $light;
+      }
+  
+      &:hover .footer__link svg {
+        stroke: $main-color;
+      }
+    }
+  }
+
+  &__link svg{
+    fill: transparent;
+    stroke: #E1D4C9;
+    transition: .3s ease-in-out;
+  }
+
+  &__info {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 125%;
+    margin-top: 32px;
+    margin-bottom: 40px;
+  }
+  .footer__info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__info-item_link {
+    width: max-content;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom .3s ease-in-out;
+
+    @include hover {
+      &:hover {
+        border-bottom: 1px solid $light;
+      }
+    }
+  }
+  &__link {
+    line-height: 150%;
+  }
+  &__link-maps {
+    &::before {
+      content: url("./../assets/img/pin-alt.svg");
+      margin-right: 8px;
+    }
+  }
+
+  &__link-phone {
+    &::before {
+      content: url("./../assets/img/phone.svg");
+      margin-right: 8px;
+    }
+  }
+
+  &__link-time {
+    &::before {
+      content: url("./../assets/img/clock.svg");
+      margin-right: 8px;
+    }
+  }
+}
